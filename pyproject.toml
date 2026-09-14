@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "project-mri"
+version = "0.3.0"
+description = "Governed context infrastructure for AI-assisted projects."
+requires-python = ">=3.10"
+dependencies = []
+authors = [{name = "Lua Helena Moon Martins Cardoso"}]
+license = {text = "Apache-2.0 for software; CC BY 4.0 for documentation and synthetic fixtures"}
+readme = "README.md"
+
+[project.scripts]
+mri = "mri.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/luahelenammc/Project-MRI"
+Repository = "https://github.com/luahelenammc/Project-MRI"
+Issues = "https://github.com/luahelenammc/Project-MRI/issues"
+InfraJam = "https://infrajam.swiftcompute.ai/"
+Moon-Source = "https://github.com/luahelenammc/Moon-Source"
+
+[tool.project-mri]
+execution = "run-from-source"
+dependencies = "standard-library-only"
+
+[tool.setuptools.packages.find]
+include = ["mri*"]

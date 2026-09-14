@@ -1,0 +1,15 @@
+version = 1
+
+[[annotations]]
+path = ["*.md", "**/*.md", "*.cff", "NOTICE", "VERSION", "REUSE.toml", "assets/*.svg", "evals/northstar/northstar_eval.json", "fixtures/northstar/expected_findings.json"]
+precedence = "override"
+SPDX-FileCopyrightText = "2026 Lua Helena Moon Martins Cardoso (Moon)"
+SPDX-License-Identifier = "CC-BY-4.0"
+
+[[annotations]]
+path = [".env.example", ".gitignore", ".github/workflows/*.yml", "mri/*.py", "server.py", "tests/*.py", "pyproject.toml", "web/*.html"]
+precedence = "override"
+SPDX-FileCopyrightText = "2026 Lua Helena Moon Martins Cardoso (Moon)"
+SPDX-License-Identifier = "Apache-2.0"
+
+# LICENSE and files under LICENSES/ are standard legal texts.
